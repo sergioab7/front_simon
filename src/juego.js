@@ -1,6 +1,6 @@
 let token = localStorage.getItem("token");
 if(!token){
-  location.href="../pages/index.html";
+  location.href="../index.html";
 }
 let idUser;
 
@@ -36,13 +36,13 @@ fetch(URL, {
     idUser=data.informacion.id;
   }else{
     localStorage.setItem("token", "");
-    location.href="../pages/index.html";
+    location.href="../index.html";
   }
 })
 
 function salir(){
   localStorage.setItem("token", "");
-  location.href="../pages/index.html";
+  location.href="../index.html";
 }
 
 function volver(){

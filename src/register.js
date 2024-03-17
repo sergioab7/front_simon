@@ -26,7 +26,7 @@ function enviarRegistro(registro){
     .then(res => res.json())
     .then(data => {
         if(data.message=="Usuario creado!"){
-            location.href="/pages/login.html"
+            location.href="../index.html"
         }
     })
 }
