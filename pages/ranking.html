@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/dashboard.css" />
+    <link rel="stylesheet" href="../styles/ranking.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <title>Ranking</title>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+
+
+    <!-- NAV-->
+    <nav class="nav">
+      <div class="izquierdaFoto">
+        <a href="../pages/dashboard.html">
+          <img src="../assets/simondice.png">
+        </a>
+        <span class="tituloApp">Play Simon</span>
+      </div>
+
+      <div class="navPrincipal">
+        <ul>
+          <li>
+            <a href="dashboard.html">Home</a>
+          </li>
+          |
+          <li>
+            <a href="ranking.html">Rankings</a>
+          </li>
+          |
+          <li>
+            <a href="https://github.com/sergioab7" target="_blank">Github</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="derechaFoto">
+        <img src="https://t3.ftcdn.net/jpg/03/58/90/78/360_F_358907879_Vdu96gF4XVhjCZxN2kCG0THTsSQi8IhT.jpg" class="imagenUsuario" alt="imagen_default"/>
+      </div>
+
+      <section class="section esconder">
+        <span class="usernamePerfil"></span>
+        <span class="correoUsuario"></span>
+        <hr>
+        <ul>
+          <li>
+            <a href="../pages/perfil.html"><button>Perfil</button></a>
+          </li>
+          <li>
+            <button onclick="salir()">Salir</button>
+          </li>
+        </ul>
+      </section>
+    </nav>
+
+    <div class="totalRanking">
+        <div class="seccionRanking">
+            <h1 class="textRanking">Ranking PlaySimon</h1>
+    
+    
+              <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                  <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                      <tr>
+                          <th scope="col" class="px-1 py-1">
+                              Posicion
+                          </th>
+                          <th scope="col" class="px-6 py-3">
+                              Usuario
+                          </th>
+                          <th scope="col" class="px-6 py-3">
+                              Puntos
+                          </th>
+                      </tr>
+                  </thead>
+                  <tbody class="agregarRanking">
+                  </tbody>
+        
+              </table>
+          </div>
+    </div>
+
+      
+
+    <!-- https://t3.ftcdn.net/jpg/03/58/90/78/360_F_358907879_Vdu96gF4XVhjCZxN2kCG0THTsSQi8IhT.jpg -->
+    
+  
+
+    <script src="../src/ranking.js"></script>
+</body>
+</html>

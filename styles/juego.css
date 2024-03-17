@@ -1,0 +1,416 @@
+*{
+
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: "Press Start 2P", system-ui
+}
+
+.ocultar{
+    display:none;
+}
+
+.izquierdaFoto{
+    display:flex;
+}
+
+.izquierdaFoto img{
+    width:70px;
+}
+
+.derechaFoto{
+    margin-right:3px;
+    margin-top:5px;
+}
+
+img{
+    width:40px;
+    cursor:pointer;
+    border-radius:50%;
+}
+
+.tituloApp{
+    display:none;
+}
+
+.nav{
+    display:flex;
+    justify-content: space-between;
+}
+
+.navPrincipal{
+    width:400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+
+.navPrincipal ul{
+    display:flex;
+    gap:5px;
+    color:white;
+}
+
+.navPrincipal ul li{
+    cursor:pointer;
+}
+
+.imagenUsuario{
+    position:relative;
+    margin-right:40px;
+}
+
+.section{
+    position:absolute;
+    background-color: rgb(104, 115, 124);
+    color:white;
+    display:flex;
+    flex-direction: column;
+    width:200px;
+    height:120px;
+    border-radius:5px;
+    top:70px;
+    right:5px;
+}
+
+hr{
+    border:1px solid white;
+}
+
+
+/** SECCIONN PRINCIPAL **/
+
+.seccionPrincipal{
+    margin-top:60px;
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+}
+
+.seccionJugar{
+    width:90%;
+    height:400px;
+}
+
+.seccionRanking{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    width:100%;
+    height:400px;
+    overflow: hidden;
+}
+
+/**
+EMPIEZA
+*/
+
+.saludarUsuario{
+    font-size: 32px;
+    color:white;
+    text-align: center;
+}
+
+.textRanking{
+    text-align: center;
+    font-size: 15px;
+    color:aliceblue;
+    font-weight: bold;
+}
+
+table{
+    width:100px;
+    height:200px;
+}
+
+.descripcionUsuario{
+    color:white;
+    font-size: 10px;
+    text-align: center;
+}
+
+.btnJugarRanking{
+    display:flex;
+    flex-direction: column;
+    margin-top:60px;
+}
+
+.btnJugarRanking > button{
+    padding:20px;
+    margin:2px;
+    border-radius:5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px -10px 20px, rgba(0, 0, 0, 0.23) 0px -6px 6px;
+    transition: transform 0.3 ease;
+}
+
+
+.btnJugar{
+    background-color: lightgreen;
+}
+
+.btnVerRanking{
+    background-color: lightsalmon
+}
+
+.btnPlay{
+    background-color: white;
+    color:black;
+}
+
+.btnPlay:hover{
+    opacity: 0.5;
+}
+
+/**
+FINAL
+**/
+
+
+.esconder{
+    display:none;
+}
+
+
+
+/* VERSIÓN PC*/
+@media screen and (min-width: 600px) {
+
+    .navPrincipal ul li:hover{
+        opacity: 0.5;
+    }
+
+    .tituloApp{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color:white;
+        font-weight: bold;
+        font-size: 29px;
+    }
+
+    .izquierdaFoto{
+        margin-left:10px;
+        width:300px;
+    }
+
+    .izquierdaFoto img{
+        width:90px;
+    }
+
+    .nav{
+        margin-top:10px;
+    }
+
+    .navPrincipal ul li{
+        list-style: none;
+    }
+
+    .navPrincipal{
+        width:500px;
+        display:flex;
+        justify-content: start;
+        align-items: center;
+        font-size: 20px;
+    }
+    
+    img{
+        width:50px;
+    }
+
+    .section{
+        width:300px;
+        padding:10px;
+    }
+
+    .seccionPrincipal{
+        display:flex;
+        flex-direction: row;
+        margin-top:60px;
+    }
+
+    .seccionJugar{
+        width:90%;
+        height:400px;
+    }
+
+    .seccionRanking{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        width:30%;
+        height:500px;
+        overflow: hidden;
+    }
+
+    /**SECCION PRINCIPAL **/
+    .saludarUsuario{
+        font-size: 70px;
+        color:white;
+        text-align: center;
+    }
+
+    .textRanking{
+        text-align: center;
+        font-size: 30px;
+        color:aliceblue;
+        font-weight: bold;
+    }
+
+    .descripcionUsuario{
+        color:white;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .btnJugarRanking{
+        display:flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-top:60px;
+    }
+    
+    .btnJugarRanking > button{
+        padding:20px;
+        margin:2px;
+        border-radius:5px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px -10px 20px, rgba(0, 0, 0, 0.23) 0px -6px 6px;
+    }
+
+    .btnJugarRanking > button:hover{
+        opacity: 0.5;
+
+    }
+    
+    
+    .btnJugar{
+        background-color: lightgreen;
+    }
+    
+    .btnVerRanking{
+        background-color: lightsalmon
+    }
+
+    /** ACABA SECCION PRINCIPAL **/
+
+
+  }
+
+
+/*Empieza juego.css*/
+body{
+    background-color: #5e6950;
+    color:white;
+}
+
+.textSimon{
+    text-align: center;
+    user-select: none;
+}
+
+.contenedorBotones{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todosBotones{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top:60px;
+    width:220px;
+    height:220px;
+    padding:5px;
+    gap:4px;
+}
+
+.todosBotones > button{
+    width:100px;
+    height:100px;
+    cursor:pointer;
+    border:0;
+    border-radius:6px;
+}
+
+.todosBotones > button:active{
+    box-shadow: 10px 0px 30px 0px white;
+}
+
+.infoJuego{
+    display:flex;
+    justify-content: space-evenly;
+    width:100%;
+}
+
+.infoJuego > button{
+    padding:5px;
+    width:100px;
+    cursor:pointer;
+    border-radius:10px;
+    border:0;
+}
+
+#red{
+    background-color: rgb(62, 114, 111);
+    border-radius:0px 00px 30px 0px;
+}
+#orange{
+    background-color: rgb(182, 7, 7);
+    border-radius:0px 0px 00px 30px;
+}
+#green{
+    background-color: rgb(190, 179, 13);
+    border-radius:0px 30px 0px 0px;
+}
+#blue{
+    background-color: rgb(10, 129, 204);
+    border-radius:30px 00px 0px 0px;
+}
+
+/**/
+
+.grupoJuego{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top:120px;
+
+}
+
+.juegoFinalizado{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.llamadaFinalizada{
+    padding:10px;
+    font-size: 26px;
+    border-radius:5px;
+    color:white;
+    font-weight: bold;
+}
+
+.volverJugar{
+    color:yellow;
+}
+
+/**/
+
+.mostrarNivel{
+    margin-top:30px;
+    text-align: center;
+}
+.desaparece{
+    display:none;
+}
+
+
+.agregado{
+    box-shadow: 10px 0px 30px 0px white;
+    transform: scale(1.1);
+}

@@ -1,0 +1,89 @@
+.totalPerfil{
+    display:flex;
+    justify-content: center;
+    height:450px;
+    margin-top:40px;
+
+}
+
+.cuadro{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:800px;
+}
+
+.primerPerfil{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.primerPerfil ul{
+    display:flex;
+    justify-content: center;
+}
+
+.segundoPerfil{
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 0px 3px;
+    display:flex;
+    justify-content: center;
+}
+
+.primerPerfil > ul{
+    padding:15px;
+}
+
+.primerPerfil > ul > li{
+    margin:10px;
+    cursor: pointer;
+    color:white;
+    transition: all 300ms;
+}
+
+.primerPerfil > ul > li:hover{
+    color:rgb(226, 81, 81);
+}
+
+/* VERSIÓN PC*/
+@media screen and (min-width: 600px) {
+    .totalPerfil{
+        display:flex;
+        justify-content: center;
+        height:450px;
+        margin-top:40px;
+    
+    }
+    
+    .cuadro{
+        display:flex;
+        justify-content: center;
+        width:800px;
+    }
+    
+    .primerPerfil{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        width:30%;
+    }
+    
+    .segundoPerfil{
+        box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 0px 3px;
+        width:70%;
+    }
+    
+    .primerPerfil > ul{
+        padding:15px;
+    }
+    
+    .primerPerfil > ul > li{
+        margin:10px;
+        cursor: pointer;
+        color:white;
+        transition: all 300ms;
+    }
+    
+    .primerPerfil > ul > li:hover{
+        color:rgb(226, 81, 81);
+    }
+    
+
+
+}
