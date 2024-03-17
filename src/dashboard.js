@@ -1,6 +1,6 @@
 let token = localStorage.getItem("token");
 if(!token){
-  location.href="../pages/login.html";
+  location.href="../pages/index.html";
 }
 
 mostrarRanking();
@@ -39,13 +39,13 @@ fetch(URL, {
     accederData(data.informacion);
   }else{
     localStorage.setItem("token", "");
-    location.href="../pages/login.html";
+    location.href="../pages/index.html";
   }
 })
 
 function salir(){
   localStorage.setItem("token", "");
-  location.href="../pages/login.html";
+  location.href="../pages/index.html";
 }
 
 function juego(){
